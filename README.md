@@ -102,3 +102,7 @@ Add Vis.js to `body`.
 </script>
 </body>
 ```
+
+References:
+http://visjs.org/docs/timeline/
+https://jsfiddle.net/jakecigar/ja3qg73t/
