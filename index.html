@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/markdown-it/7.0.0/markdown-it.min.js"></script>
+    <script src="js/sanitizer.js"></script>
+    <script src="js/script.js"></script>
+
+    <title>Timeline</title>
+</head>
+
+<body>
+    <div id="wrapper">
+                    
+        <div id="outer">
+            <div id="inner">
+                <div id="details">
+                    <div class="options">
+                        <header>
+                            <h1>Timelines for Wikipedia</h1>
+                            <p>Browse Wikipedia articles through a timeline view.</p>
+                        </header>
+                        <br>
+                        <section id="parameters">
+                            <form action="demo_form.asp" class="dark-form">
+                                <label><span>Article<a href="https://github.com/Ugotsta/timeline#page" class="info">?</a></span><input type="text" id="page" name="page" value="Ahmedabad"></label>
+                                <label><span>CSS<a href="https://github.com/Ugotsta/timeline#css" class="info">?</a></span><input type="text" id="css" name="css" value="1a2f84c1e6ca8407c364ac31450a3b26"></label>
+                                <label><span> </span>
+                            <input id="glorify" type="button" class="button" value="Glorify" onclick="window.open(window.location.href + '&page=' + document.getElementById('page').value + '&css=' + document.getElementById('css').value, '_blank');">
+                            </label>
+                            </form>
+                        </section>
+                        <section id="details">
+                            <br> Page title:
+                            <br> <a href="/timeline/?gist=ae42e51df02f62d5a636c29a2894d297" target="_blank">https://ugotsta.github.io/timeline/?<span class="param">page=Ahmedabad</span></a>
+                            <br><br> Gist ID for CSS:
+                            <br> <a href="/timeline?page=Ahmedabad&css=1a2f84c1e6ca8407c364ac31450a3b26" target="_blank">https://ugotsta.github.io/timeline/?page=Ahmedabad&<span class="param">css=b12817ebc35dd401b31892d97061f24b</span></a>
+                            <br><br>
+                            <br> More details: <a href="https://github.com/Ugotsta/timeline/" id="view-on-github" class="button"><span>View on GitHub</span></a>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    <!-- Info Panel -->
+    <div id="info">
+        <a id="github-fork" href="https://github.com/Ugotsta/timline/#timline"><img style="position: absolute; top: 0; right: 0; border: 0;" src="//ugotsta.github.io/images/fork-white.png" alt="Fork me on GitHub"></a>
+        <h1 class="timeline">TIME<span class="underline">LINE</span></h1>
+        <div id="command-count">.section total:</div>
+        </br>
+        <div id="gist-details">
+            View this file:</br>
+            <a id="gist-source" href="https://github.com/Ugotsta/cheats/blob/master/README.md" target="_blank">↪</a>
+            <span id="gist-url" class="selector-toggle">▼ README.md</span>
+            <div id="gist-selector" class="selector">
+                <input id="gist-input" type="text" placeholder="Gist ID" />
+                <a href="https://github.com/Ugotsta/cheats/blob/master/README.md" target="_blank">↪</a>
+                <span id="default">Default (README.md)</span><br/>
+                <a href="https://gist.github.com/2a06603706fd7c2eb5c93f34ed316354" target="_blank">↪</a>
+                <span id="2a06603706fd7c2eb5c93f34ed316354">Alexa Cheats</span><br/>
+            </div>
+        </div>
+        <br/>
+        <div id="css-details">
+            CSS Theme:<br/>
+            <a id="css-source" href="https://github.com/Ugotsta/cheats/blob/master/css/style.css" target="_blank">↪</a>
+            <span id="css-url" class="selector-toggle">▼ Default (style.css)</span>
+            <div id="css-selector" class="selector">
+                <input id="css-input" type="text" placeholder="Gist ID for CSS theme" />
+                <a href="https://github.com/Ugotsta/cheats/blob/master/css/style.css" target="_blank">↪</a>
+                <span id="default">Default (style.css)</span><br/>
+                <a href="https://gist.github.com/3340cb9dcb273289b51aef3570f5304d" target="_blank">↪</a>
+                <span id="3340cb9dcb273289b51aef3570f5304d">Alexa Cheats</span><br/>
+            </div>
+            
+        </div>
+        <br/>
+        <h3>Table of Contents</h3>
+        <div id="toc">
+            general
+        </div>
+        <div id="hide"><kbd>?</kbd> - show/hide this panel.</div>
+    </div><!-- End Info Panel -->
+    
+</body>
+
+</html>
